@@ -9,4 +9,4 @@
 
 ## Feito por:
 
-### Francisco Lucas Lopes Araujp
+### Francisco Lucas Lopes Araujo
