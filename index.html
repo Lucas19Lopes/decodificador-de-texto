@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <section class="input-section">
+            <div class="input-container">
+                <textarea id="texto_input" class="input-text" placeholder="Digite seu texto" name="texto" rows="5" cols="33"></textarea>
+            </div>
+            <div class="action-section">
+                <p class="action-warning">Apenas letras minúsculas e sem acento.</p>
+                <div class="button-container">
+                    <a class="button" onclick="criptografar()">Criptografar</a>
+                    <a class="button-2" onclick="descriptografar()">Descriptografar</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="output-section">
+            <div class="output-container">
+                <div class="output-icon">
+                </div>
+                <div class="output-text-container">
+                    <p id="textoResultado" class="output-text"><strong>Nenhuma mensagem encontrada</strong></p>
+                    <p id="subtitulo" class="output-subtitle">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <div class="copy-container">
+                    <button aria-disabled="true" disabled class="button-3" onclick="copiarResultado()" id="copiar">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+<footer>
+    <p>Desenvolvido por Francisco Lucas Lopes Araujo.</p>
+</footer>
+</html>
